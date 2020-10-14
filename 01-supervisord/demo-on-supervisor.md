@@ -55,3 +55,13 @@ sudo service supervisord reload
 ```bash
 systemctl reload supervisord.service
 ```
+3. 如果遇到下面这个问题：
+> unix:///tmp/supervisor.sock no such file
+
+运行下面这个命令可以解决该问题：
+```bash
+sudo service supervisord restart
+
+# reference:
+# https://stackoverflow.com/questions/45957187/unix-tmp-supervisor-sock-no-such-file
+```

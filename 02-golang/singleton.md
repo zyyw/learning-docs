@@ -1,7 +1,7 @@
 # 如何用 GoLang 实现一个单例
 ## 懒汉加锁
 懒汉加锁:虽然解决并发的问题，但每次加锁是要付出代价的
-```golang
+```go
 type singleton struct{}
 
 var (
@@ -21,7 +21,7 @@ func GetInstance1() *singleton {
 ```
 ## 双重加锁
 双重锁:避免了每次加锁，提高代码效率
-```golang
+```go
 type singleton struct{}
 var (
     ins *singleton
@@ -40,7 +40,7 @@ func GetInstance2() *singleton {
 }
 ```
 ## 用 sync.Once 实现
-```golang
+```go
 type singleton struct{}
 
 var (
