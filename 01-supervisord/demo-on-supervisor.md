@@ -14,6 +14,9 @@ supervisord -version
 ```bash
 echo_supervisord_conf  >  /etc/supervisord.conf
 vi /etc/supervisord.conf
+# update the following lines (and uncomment them)
+# [include]
+# files = /etc/supervisor/conf.d/*.ini
 mkdir -p /etc/supervisor/conf.d/
 vi /etc/supervisor/conf.d/block_parser.ini
 (user - centos: mkdir -p /data/block-parser/logs)
