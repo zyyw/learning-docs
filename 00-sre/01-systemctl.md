@@ -49,3 +49,6 @@ systemctl restart nginx.service
 ```
 systemctl list-units --type=service
 ```
+
+## CentOS安装Nginx
+https://www.cnblogs.com/chnmig/p/9808723.html
