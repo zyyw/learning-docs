@@ -28,4 +28,4 @@ func app(a []int) {
 ```
 
 ## 分析
-ap 函数里面的 append 操作导致底层数组重新分配内存了 (reslice)，append 之后的切片 a 的底层数组和 main 函数里的切片 a 已经不是同一个切片了。
+ap 函数里面的 append 操作导致底层数组重新分配内存了 (reslice)，append 之后的切片 a 的底层数组和 main 函数里的切片 a 的底层数组已经不是同一个数组了。
